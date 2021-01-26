@@ -2,7 +2,6 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const BundleAnalyzerPlugin = require("webpack-bundle-analyzer")
   .BundleAnalyzerPlugin;
-const LodashModuleReplacementPlugin = require("lodash-webpack-plugin");
 
 module.exports = {
   mode: "development",
@@ -17,7 +16,6 @@ module.exports = {
             loader: "babel-loader",
             options: {
               presets: ["@babel/preset-env", "@babel/preset-react"],
-              plugins: ["lodash"],
             },
           },
         ],
@@ -27,11 +25,5 @@ module.exports = {
   resolve: {
     extensions: [".js", "jsx", ".json"],
   },
-  plugins: [
-    new HtmlWebpackPlugin(),
-    new BundleAnalyzerPlugin(),
-    new LodashModuleReplacementPlugin({
-      paths: true,
-    }),
-  ],
+  plugins: [new HtmlWebpackPlugin(), new BundleAnalyzerPlugin()],
 };
