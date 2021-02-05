@@ -1,0 +1,42 @@
+{
+  "name": "babel-esbuild-webpack-mix-test",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "webpack serve --open --config webpack.config.js",
+    "build": "NODE_ENV=production webpack  --config webpack.config.js"
+  },
+  "devDependencies": {
+    "@babel/core": "7.12.13",
+    "@babel/preset-env": "7.12.13",
+    "@babel/preset-react": "7.12.13",
+    "autoprefixer": "10.2.4",
+    "babel-loader": "8.2.2",
+    "css-loader": "5.0.1",
+    "html-webpack-plugin": "5.0.0",
+    "postcss": "8.2.4",
+    "postcss-loader": "5.0.0",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "style-loader": "2.0.0",
+    "tailwindcss": "2.0.2",
+    "webpack": "5.20.2",
+    "webpack-cli": "4.5.0",
+    "webpack-dev-server": "3.11.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XHMM/_babel-esbuild-webpack-mix-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/XHMM/webpack5-test/issues"
+  },
+  "homepage": "https://github.com/XHMM/webpack5-test#readme",
+  "dependencies": {
+    "sass": "1.32.6",
+    "sass-loader": "10.1.1",
+    "webpack-bundle-analyzer": "4.4.0"
+  }
+}
